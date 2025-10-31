@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'MainNavigation.dart'; // Import navigasi utama
 
 // 🔹 (BARU) HALAMAN LOGIN
 class LoginScreen extends StatefulWidget {
@@ -16,7 +16,10 @@ class _LoginScreenState extends State<LoginScreen> {
     // Untuk demo ini, kita hanya cek apakah form sudah diisi
     if (_formKey.currentState!.validate()) {
       // Navigasi ke Halaman Utama (MainNavigation)
-      
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => MainNavigation()),
+      );
     }
   }
 

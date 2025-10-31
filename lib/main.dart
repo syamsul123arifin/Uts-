@@ -1,6 +1,5 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
-import 'SplashScreen.dart';
+import 'SplashScreen.dart'; // Import halaman splash
 
 // 🚀 ENTRY POINT
 void main() {
